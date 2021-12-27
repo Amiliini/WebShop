@@ -78,7 +78,7 @@ const data = {
         category: 'Animals',
         image: '/images/p7.jpg',
         price: 8,
-        countInStock: 19,
+        countInStock: 0,
         brand: 'Mum',
         rating: 4.5,
         numReviews: 15,
