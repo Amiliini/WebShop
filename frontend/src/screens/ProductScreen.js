@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Rating from '../components/Rating';
-import data from '../data';
+import React from "react";
+import { Link } from "react-router-dom";
+import Rating from "../components/Rating";
+import data from "../data";
 
 export default function ProductScreen(props) {
   const product = data.products.find((x) => x._id === props.match.params.id);
-if (!product) {
-    return <div> Product Not Found</div>;
+  if (!product) {
+    return <div>Product Not Found</div>;
   }
   return (
     <div>
