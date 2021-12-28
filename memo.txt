@@ -1,1 +1,61 @@
-vsdvdsdv
+Online store case 
+
+Assignment 
+
+This assignment is about writing an application in Golang to showcase a customer 
+buying a product from an online store. 
+
+To do so, the application must implement RESTful APIs for: 
+
+1. Customer activities. 
+2. Order activities. 
+Requirements 
+
+Let us consider a case of a customer who wants to buy some books from an online 
+store. For this, you need to share the following in your assignment: 
+
+1. Simple word document: 
+a. List some of the possible scenarios of the customer interactions when 
+she/he tries to place an order. 
+b. List some of the possible scenarios that may happen for her/his orders 
+c. Create a flow diagram to show how the interaction will be for such case 
+starting from the landing page of that webstore till the order has 
+placed 
+2. Application code: 
+a. In a case of a new customer, create RESTful APIs for: 
+i. Creating a customer 
+ii. Getting customer’s info using an ID you choose for your 
+customers that can be identified with that. 
+iii. Updating customer’s info using his ID 
+iv. Listing all customers 
+b. The customer is already logged in and trying to place an order. Create 
+RESTful APIs for: 
+i. Creating an order 
+ii. Canceling/Deleting an order 
+iii. List all orders using customer ID 
+Tools 
+
+For you assignment, you can use any database or a REST/Server framework youwish. Please also include guidelines how to setup the development environment and 
+any setup steps we are required to make (if any) to run the application. 
+
+Things to consider 
+
+We will investigate your application's functionality as well as the actual 
+implementation and your ability to model data in database. So please consider 
+
+
+writing elegant, readable and reusable code. Whatever you decide to return to us, 
+we consider as something you would have sent to a customer. 
+
+How to return the assignment 
+
+Preferred option is to share the application via private GitHub project. Sharing the 
+code via Dropbox, Google Drive etc. is also acceptable. 
+
+Bonus tasks 
+
+Following are optional tasks for this assignment: 
+
+1. Create one test per API (both customer and order APIs) 
+2. App logger with a format you find suitable for Info, Debug, and Error cases. 
+
