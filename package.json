@@ -6,10 +6,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
-
   },
   "repository": {
-  "type": "git",
+    "type": "git",
     "url": "git+https://github.com/Amiliini/WebShop.git"
   },
   "author": "Mari",
@@ -19,7 +18,10 @@
   },
   "homepage": "https://github.com/Amiliini/WebShop#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.1.4"
   },
   "devDependencies": {
     "eslint": "^8.5.0",

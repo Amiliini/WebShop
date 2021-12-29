@@ -1,7 +1,21 @@
+import bcrypt from "bcryptjs";
 const data = {
+  users: [
+    {
+      name: "Mari",
+      email: "mari@jossain.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: true,
+    },
+    {
+      name: "Terttu",
+      email: "terttu@example.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: "1",
       name: "Dino",
       category: "Animals",
       image: "/images/p1.jpg",
@@ -13,7 +27,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "2",
       name: "Duck",
       category: "Animals",
       image: "/images/p2.jpg",
@@ -25,7 +38,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "3",
       name: "Bunny",
       category: "Animals",
       image: "/images/p3.jpg",
@@ -37,7 +49,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "4",
       name: "Kitty",
       category: "Animals",
       image: "/images/p4.jpg",
@@ -49,8 +60,7 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "5",
-      name: "Brocoli",
+      name: "Broccoli",
       category: "Vegetables",
       image: "/images/p5.jpg",
       price: 1.5,
@@ -61,7 +71,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "6",
       name: "Rubiks cube",
       category: "Games",
       image: "/images/p6.jpg",
@@ -73,7 +82,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "7",
       name: "Teddy",
       category: "Animals",
       image: "/images/p7.jpg",
@@ -85,7 +93,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "8",
       name: "Bear",
       category: "Animals",
       image: "/images/p8.jpg",

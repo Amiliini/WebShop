@@ -35,7 +35,8 @@ ii. Canceling/Deleting an order
 iii. List all orders using customer ID 
 Tools 
 
-For you assignment, you can use any database or a REST/Server framework youwish. Please also include guidelines how to setup the development environment and 
+For you assignment, you can use any database or a REST/Server framework youwish.
+Please also include guidelines how to setup the development environment and 
 any setup steps we are required to make (if any) to run the application. 
 
 Things to consider 
@@ -49,8 +50,8 @@ we consider as something you would have sent to a customer.
 
 How to return the assignment 
 
-Preferred option is to share the application via private GitHub project. Sharing the 
-code via Dropbox, Google Drive etc. is also acceptable. 
+Preferred option is to share the application via private GitHub project. 
+Sharing the code via Dropbox, Google Drive etc. is also acceptable. 
 
 Bonus tasks 
 
