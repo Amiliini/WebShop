@@ -1,5 +1,7 @@
-# TodO:
+# Todo:
 -add the "order for 50 euros, get free shipping" message
+
+
 
 
 # Getting Started with Create React App
