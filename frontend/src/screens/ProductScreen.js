@@ -47,7 +47,7 @@ export default function ProductScreen(props) {
                     numReviews={product.numReviews}
                   ></Rating>
                 </li>
-                <li>Pirce : ${product.price}</li>
+                <li>Pirce : {product.price} €</li>
                 <li>
                   Description:
                   <p>{product.description}</p>
