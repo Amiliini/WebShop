@@ -1,6 +1,7 @@
 # Todo:
 -add the "order for 50 euros, get free shipping" message
-
+-Add PayPal button and implement order payment
+-
 
 
 
