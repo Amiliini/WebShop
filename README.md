@@ -1,7 +1,6 @@
 # Todo:
 -add the "order for 50 euros, get free shipping" message
--Add PayPal button and implement order payment
--
+- fix: "findDOMNode is deprecated in StrictMode"
 
 
 

@@ -9,6 +9,7 @@ import MessageBox from '../components/MessageBox';
 import { ORDER_PAY_RESET } from '../constants/orderConstants';
 
 export default function OrderScreen(props) {
+  const currency = "EUR"
   const orderId = props.match.params.id;
   const [sdkReady, setSdkReady] = useState(false);
   const orderDetails = useSelector((state) => state.orderDetails);
@@ -24,7 +25,7 @@ export default function OrderScreen(props) {
     const { data } = await Axios.get('/api/config/paypal');
     const script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = `https://www.paypal.com/sdk/js?client-id=${data}`;
+    script.src = `https://www.paypal.com/sdk/js?client-id=${data}&currency=EUR`;
     script.async = true;
     script.onload = () => {
       setSdkReady(true);
@@ -113,7 +114,7 @@ const successPaymentHandler = (paymentResult) => {
                         </div>
 
                         <div>
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          {item.qty} x {item.price}€ = {item.qty * item.price}€
                         </div>
                       </div>
                     </li>
@@ -132,19 +133,19 @@ const successPaymentHandler = (paymentResult) => {
               <li>
                 <div className="row">
                   <div>Items</div>
-                  <div>${order.itemsPrice.toFixed(2)}</div>
+                  <div>{order.itemsPrice.toFixed(2)}€</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Shipping</div>
-                  <div>${order.shippingPrice.toFixed(2)}</div>
+                  <div>{order.shippingPrice.toFixed(2)}€</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Tax</div>
-                  <div>${order.taxPrice.toFixed(2)}</div>
+                  <div>{order.taxPrice.toFixed(2)}€</div>
                 </div>
               </li>
               <li>
@@ -153,7 +154,7 @@ const successPaymentHandler = (paymentResult) => {
                     <strong> Order Total</strong>
                   </div>
                   <div>
-                    <strong>${order.totalPrice.toFixed(2)}</strong>
+                    <strong>{order.totalPrice.toFixed(2)}€</strong>
                   </div>
                 </div>
               </li>
@@ -170,6 +171,7 @@ const successPaymentHandler = (paymentResult) => {
 
                       <PayPalButton
                         amount={order.totalPrice}
+                        currency={currency}
                         onSuccess={successPaymentHandler}
                       ></PayPalButton>
                     </>
