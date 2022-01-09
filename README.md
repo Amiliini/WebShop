@@ -1,6 +1,13 @@
 # Todo:
--add the "order for 50 euros, get free shipping" message
+- add the "order for 50 euros, get free shipping" message
 - fix: "findDOMNode is deprecated in StrictMode"
+
+- search products
+- category sidebar
+- sort/filter box?
+- rate and review 
+- email order confirmation
+
 
 
 
