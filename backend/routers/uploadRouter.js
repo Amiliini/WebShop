@@ -1,6 +1,9 @@
+//api that saves file in upload-folder and sets filename to the timestamp
+
 import multer from 'multer';
 import express from 'express';
 import { isAuth } from '../utils/utils.js';
+
 
 const uploadRouter = express.Router();
 
