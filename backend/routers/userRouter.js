@@ -6,7 +6,8 @@ import User from "../models/userModel.js";
 import { generateToken, isAdmin, isAuth } from "../utils/utils.js";
 
 const userRouter = express.Router();
-
+/*
+//creating data into empty db
 userRouter.get(
   "/seed",
   expressAsyncHandler(async (req, res) => {
@@ -14,7 +15,7 @@ userRouter.get(
     const createdUsers = await User.insertMany(data.users);
     res.send({ createdUsers });
   })
-);
+);*/
 userRouter.post(
   "/signin",
   expressAsyncHandler(async (req, res) => {

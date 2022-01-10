@@ -19,7 +19,8 @@ productRouter.get(
     res.send(products);
   })
 );
-
+/*
+//creating data to empty database.. 
 productRouter.get(
   "/seed",
   expressAsyncHandler(async (req, res) => {
@@ -27,7 +28,8 @@ productRouter.get(
     const createdProducts = await Product.insertMany(data.products);
     res.send({ createdProducts });
   })
-);
+);*/
+
 //show a specific product
 productRouter.get(
   "/:id",
@@ -66,6 +68,7 @@ productRouter.post(
     res.send({ message: 'Product Created', product: createdProduct });
   })
 );
+
 //UPDATE product
 productRouter.put(
   '/:id',

@@ -5,6 +5,7 @@ import { isAdmin, isAuth, isSellerOrAdmin } from '../utils/utils.js';
 
 const orderRouter = express.Router();
 
+//authorised users see all orders
 orderRouter.get(
   '/',
   isAuth,
@@ -21,7 +22,7 @@ orderRouter.get(
   })
 );
 
-
+//get all users own orders
 orderRouter.get(
   '/mine',
   isAuth,
@@ -57,6 +58,7 @@ orderRouter.post(
     }
   })
 );
+
 orderRouter.get(
   '/:id',
   isAuth,
@@ -69,6 +71,7 @@ orderRouter.get(
     }
   })
 );
+
 orderRouter.put(
   '/:id/pay',
   isAuth,
